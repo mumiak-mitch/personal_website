@@ -188,7 +188,7 @@ a:hover {
     text-align: justify;
     padding: 10px;
     border-radius: 15px;
-    background: linear-gradient(to top, #a52a2a 50%, #ffffff 50%);
+    background: linear-gradient(to top, #5C4033 50%, #ffffff 50%);
     background-size: 100% 200%;
     transition: all .8s;
 }
@@ -197,7 +197,7 @@ a:hover {
     background-position: left bottom;
     color: #ffffff;
     border: none;
-    box-shadow: 0 0 20px #a52a2a;
+    box-shadow: 0 0 20px #5C4033;
 }
 
 .box img {

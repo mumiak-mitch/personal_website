@@ -26,10 +26,10 @@
             mollitia assumenda officia accusantium nesciunt quibusdam expedita quae error ducimus aliquam molestiae,
             doloremque exercitationem aspernatur similique. Adipisci sint in voluptatem distinctio ea ipsam vero iusto
             earum quae, esse sapiente vitae beatae saepe fugiat cumque nesciunt!</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde in ut deserunt, voluptatem voluptatum ipsum,
-                mollitia assumenda officia accusantium nesciunt quibusdam expedita quae error ducimus aliquam molestiae,
-                doloremque exercitationem aspernatur similique. Adipisci sint in voluptatem distinctio ea ipsam vero iusto
-                earum quae, esse sapiente vitae beatae saepe fugiat cumque nesciunt!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde in ut deserunt, voluptatem voluptatum ipsum,
+            mollitia assumenda officia accusantium nesciunt quibusdam expedita quae error ducimus aliquam molestiae,
+            doloremque exercitationem aspernatur similique. Adipisci sint in voluptatem distinctio ea ipsam vero iusto
+            earum quae, esse sapiente vitae beatae saepe fugiat cumque nesciunt!</p>
     </section>
 
     <hr>
@@ -39,6 +39,7 @@
         <h3>Portfolio</h3>
 
         <!--The projects-->
+        <!--The first column-->
         <div class="row">
             <div class="column">
                 <div class="card">
@@ -66,6 +67,7 @@
             </div>
         </div>
 
+        <!--the second column-->
         <div class="row">
             <div class="column">
                 <div class="card">
@@ -96,57 +98,60 @@
 
     <hr>
 
-    <!--Skills-->
-    <section id="skills">
-        <h3>Skills</h3>
+    <div class="tabs">
+        <button class="tablink" onclick="openTab(event, 'skills')">Skills</button>
+        <button class="tablink" onclick="openTab(event, 'career')">Career Highlights</button>
+        <button class="tablink" onclick="openTab(event, 'education')">Education</button>
 
-        <!--buttons in one line with skills-->
-        <div class="skills">
-            <button>HTML</button>
-            <button>CSS</button>
-            <button>JavaScript</button>
-            <button>Bootstrap</button>
-            <button>SCSS</button>
-            <button>React</button>
+        <div id="skills" class="tabcontent">
+            <!--Skills section content-->
+            <section>
+                <h3>Skills</h3>
+                <div class="skills">
+                    <button>HTML</button>
+                    <button>CSS</button>
+                    <button>JavaScript</button>
+                    <button>Bootstrap</button>
+                    <button>SCSS</button>
+                    <button>React</button>
+                </div>
+                <div class="titles">
+                    <ul>
+                        <li>Front-end web developer</li>
+                        <li>Back-end web developer</li>
+                        <li>UI/UX design</li>
+                    </ul>
+                </div>
+            </section>
         </div>
 
-        <div class="titles">
-            <ul>
-                <li>Front-end web developer</li>
-                <li>Back-end web developer</li>
-                <li>UI/UX design</li>
-            </ul>
+        <div id="career" class="tabcontent">
+            <!--Career Highlights section content-->
+            <section>
+                <h3>Career Highlights</h3>
+                <div class="career">
+                    <h4 class="place">City, County</h4>
+                    <h4>Software Developer</h4>
+                    <ul>
+                        <li>Maintaining sites</li>
+                        <li>Developing sites</li>
+                    </ul>
+                </div>
+            </section>
         </div>
-    </section>
 
-    <hr>
-
-    <!--Past experience-->
-    <section id="career">
-        <h3>Career Highlights</h3>
-
-        <div class="career">
-            <h4 class="place">City, County</h4>
-            <h4>Software Developer</h4>
-            <ul>
-                <li>Maintaining sites</li>
-                <li>Developing sites</li>
-            </ul>
+        <div id="education" class="tabcontent">
+            <!--Education section content-->
+            <section>
+                <h3>Education</h3>
+                <div class="education">
+                    <h4 class="place">City, County</h4>
+                    <h4>University</h4>
+                    <a href="#">View University</a>
+                </div>
+            </section>
         </div>
-    </section>
-
-    <hr>
-
-    <!--Education-->
-    <section id="education">
-        <h3>Education</h3>
-
-        <div class="education">
-            <h4 class="place">City, County</h4>
-            <h4>University</h4>
-            <a href="#">View University</a>
-        </div>
-    </section>
+    </div>
 
     <hr>
 
@@ -157,8 +162,6 @@
         <p>Email: <a href="mailto:example@email.com">Placeholder Name</a></p>
         <p>LinkedIn: <a href="#">Placeholder Name</a></p>
     </section>
-
-    <hr>
 
     <!--Footer-->
     <footer>
